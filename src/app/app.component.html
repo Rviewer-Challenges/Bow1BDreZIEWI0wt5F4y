@@ -1,0 +1,14 @@
+<body>
+  <div id="container">
+    <div id="title" *ngIf="showChooseLevel">
+      <img id="title1" src="/assets/img/memoryMortytitle1.png" alt="" />
+      <img id="title2" src="/assets/img/memoryMortytitle2.png" alt="">
+    </div>
+
+    <app-choose-level id="chooseLevelSelector" (sendChosenLevel)="getLevel($event)" *ngIf="showChooseLevel">
+    </app-choose-level>
+
+    <app-board-game id="boardGameSelector" [getChosenLevel]="chosenLevel"
+      (sendShowChooseLevel)="getShowChooseLevel($event)" *ngIf="!showChooseLevel"></app-board-game>
+  </div>
+</body>

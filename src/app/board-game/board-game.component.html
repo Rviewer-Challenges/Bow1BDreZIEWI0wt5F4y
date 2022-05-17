@@ -1,0 +1,20 @@
+<div id="container">
+  <div id="bar-info">
+    <app-info-game [getAttempts]="attempts" [getIsMatched]="isMatched" [getArrayLength]="newArrayLength"
+      [getFirstMove]="firstMove" (sendLoseGame)="getLoseGame($event)" [sendShowChooseLevel]="sendShowChooseLevel">
+    </app-info-game>
+  </div>
+
+  <div #boardGame id="board-game" [ngStyle]="{
+      'grid-template-columns': setGridColumns,
+      'grid-template-rows': setGridRows
+    }">
+    <div #card class="card {{ option.imagen }}" id="{{ option.id }}" (click)="addRotateCard(option.id)"
+      *ngFor="let option of newArray">
+      <div class="front" [ngStyle]="{'background-color': loseGame == true ? 'red' : '#682fc4'}"><img
+          src="assets/img/front.png" alt="" /></div>
+      <div class="back" [ngStyle]="{'background-color': loseGame == true ? 'red' : '##00b2c8'}"><img
+          src="{{ option.imagen }}" alt="" /></div>
+    </div>
+  </div>
+</div>

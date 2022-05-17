@@ -1,0 +1,97 @@
+* {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#bar-info {
+  display: flex;
+}
+
+#info-game {
+  display: flex;
+  justify-content: center;
+}
+
+#info-time {
+  display: flex;
+}
+
+#attempts,
+#matched,
+#showTime {
+  font-family: 'rmfont';
+  text-align: left;
+  width: 210px;
+  height: auto;
+  padding: 10px;
+  font-size: 2em;
+  margin: 20px;
+  color: black;
+  background-color: #00B2C8;
+  border: 3px solid black;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #00FF33, 0 0 10px #00FF33, 0 0 20px #04F466, 0 0 20px #04F466, 0 0 20px #04F466;
+  cursor: pointer;
+}
+
+#btn-back {
+  font-family: 'rmfont';
+  text-align: center;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  font-size: 2em;
+  margin: 20px;
+  color: black;
+  background-color: #00B2C8;
+  border: 3px solid black;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #00FF33, 0 0 10px #00FF33, 0 0 20px #04F466, 0 0 20px #04F466, 0 0 20px #04F466;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 450px) and (orientation: portrait) {
+
+  #info-game {
+    flex-direction: column;
+  }
+
+  #info-time {
+    flex-direction: column;
+  }
+
+  #showTime,
+  #attempts,
+  #matched,
+  #btn-back {
+    width: 120px;
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+
+  #showTime,
+  #attempts,
+  #matched,
+  #btn-back {
+    width: 120px;
+    font-size: 1em;
+  }
+
+}
+
+ @media screen and (max-width: 900px) and (orientation: portrait) {
+  #info-game {
+    flex-direction: column;
+  }
+
+  #info-time {
+    flex-direction: column;
+  }
+
+}  
