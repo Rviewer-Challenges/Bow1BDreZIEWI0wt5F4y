@@ -1,0 +1,35 @@
+#chooseLevel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  font-family: 'rmfont';
+  font-size: 2em;
+  /* margin-top: 40px; */
+  margin-top: 50px;
+  color: black;
+  background-color: #00B2C8;
+  border: 3px solid black;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #00FF33, 0 0 10px #00FF33, 0 0 20px #04F466, 0 0 20px #04F466, 0 0 20px #04F466;
+  cursor: pointer;
+}
+
+#btn-3 {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  #chooseLevel {
+    display: block;
+  }
+
+  button {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    text-align: center;
+    background: url(/assets/img/wallpaper.jpg);
+    background-size: cover;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
